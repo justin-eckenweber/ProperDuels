@@ -22,17 +22,17 @@ use pocketmine\utils\TextFormat;
 use Webmozart\PathUtil\Path;
 
 final class ProperDuels extends PluginBase{
-	private static $instance = null;
+	private static ?ProperDuels $instance = null;
 
-	private $arenaManager;
+	private ArenaManager $arenaManager;
 
-	private $kitManager;
+	private KitManager $kitManager;
 
-	private $gameManager = null;
+	private ?GameManager $gameManager = null;
 
-	private $queueManager;
+	private QueueManager $queueManager;
 
-	private $sessionManager = null;
+	private ?SessionManager $sessionManager = null;
 
 	public static function getInstance(): ?self{
 		return self::$instance;

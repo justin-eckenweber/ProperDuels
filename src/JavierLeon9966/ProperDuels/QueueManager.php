@@ -12,7 +12,7 @@ use pocketmine\math\Vector3;
 
 final class QueueManager{
 
-	private $queues = [];
+	private array $queues = [];
 
 	public function add(string $rawUUID, ?Arena $arena = null): void{
 		$arenaManager = ProperDuels::getInstance()->getArenaManager();
