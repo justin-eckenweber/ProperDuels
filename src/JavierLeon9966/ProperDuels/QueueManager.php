@@ -7,9 +7,6 @@ namespace JavierLeon9966\ProperDuels;
 use JavierLeon9966\ProperDuels\arena\Arena;
 use JavierLeon9966\ProperDuels\game\Game;
 
-use pocketmine\item\Item;
-use pocketmine\math\Vector3;
-
 final class QueueManager{
 
 	private array $queues = [];
